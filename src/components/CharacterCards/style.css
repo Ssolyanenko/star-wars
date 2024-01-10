@@ -1,0 +1,30 @@
+.character-card {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.character-card__content {
+  padding: 10px;
+}
+
+.character-card__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.character-card__img {
+  border-radius: 8px 8px 0 0;
+}
+
+.character-card__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.character-card__btn i {
+  color: red;
+  font-size: 24px;
+  position: absolute;
+  top: 5%;
+  right: 12%;
+}

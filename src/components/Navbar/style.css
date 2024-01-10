@@ -1,0 +1,19 @@
+.nav-bar {
+    background-color: #000;
+}
+
+.nav-bar__img {
+    width: 110px;
+    height: 30px;
+}
+
+.nav-bar__list button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.nav-bar__link {
+    text-decoration: none;
+    color: #000;
+}
