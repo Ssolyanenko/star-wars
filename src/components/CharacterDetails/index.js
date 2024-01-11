@@ -2,7 +2,7 @@ import "./style.css";
 import Films from "../Films";
 
 const CharacterDetails = ({ name, hair, skin, mass, height, eye, id, gender, films }) => {
-    console.log(gender)
+
     return (
         <div className="col-md-12 col-lg-12 mt-5">
             <div className="row g-0 border rounded-4 overflow-hidden flex-md-row mb-4 shadow h-md-250 position-relative">

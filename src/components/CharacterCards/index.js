@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 
-
-
 const CharacterCards = ({ id, name }) => {
 
     return (

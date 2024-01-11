@@ -1,7 +1,14 @@
 import {enhancedFetch} from "../services/Http";
-import {retrieveList} from "../actions";
+
 export const BASE_API_URL = `https://swapi.dev/api`;
 
+ const retrieveList = async (array) => {
+    let dataList = [];
+    for (let url of array) {
+        dataList = [...dataList, await enhancedFetch(url)]
+    }
+    return dataList
+}
 export const fetchCharacter = (id) => {
     return async (dispatch) => {
         dispatch({ type: 'FETCH_CHARACTER_REQUEST' });
@@ -17,23 +24,6 @@ export const fetchCharacter = (id) => {
         }
     };
 };
-
-export const fetchFilm = (id) => {
-    return async (dispatch) => {
-        dispatch({ type: 'FETCH_FILM_REQUEST' });
-
-        try {
-            const response = await enhancedFetch(BASE_API_URL + `/films/${id}`);
-            dispatch({ type: 'FETCH_FILM_SUCCESS', payload: response });
-
-            const dataFilms = await retrieveList(response.films);
-            dispatch({ type: 'FETCH_FILMS_SUCCESS', payload: dataFilms });
-        } catch (error) {
-            dispatch({ type: 'FETCH_FILM_FAILURE' });
-        }
-    };
-};
-
 
 export const setSearchQuery = (query) => ({
     type: 'SET_SEARCH_QUERY',
@@ -57,3 +47,7 @@ export const setError = (hasError) => ({
     type: 'SET_ERROR',
     payload: hasError,
 });
+
+
+
+

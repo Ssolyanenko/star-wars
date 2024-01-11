@@ -6,7 +6,6 @@ import Home from '../../pages/Home'
 import Characters from '../../pages/Characters'
 import NotFound from '../../pages/NotFound';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
