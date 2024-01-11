@@ -1,18 +1,7 @@
 Star Wars Character Filter
 Filter and explore Star Wars characters with ease!
 
-Table of Contents
-Introduction
-Features
-Demo
-Getting Started
-Prerequisites
-Installation
-Usage
-Technologies Used
-Contributing
-License
-Introduction
+
 The Star Wars Character Filter is a web application that allows users to explore and filter Star Wars characters based on various criteria. Whether you're looking for characters from a specific film, gender, or mass range, this project provides an interactive way to find and learn about your favorite Star Wars characters.
 
 Features
@@ -30,7 +19,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/starwars-filter.git
+git clone https://github.com/Ssolyanenko/star-wars
 Navigate to the project directory:
 
 bash
@@ -52,11 +41,13 @@ Copy code
 # or
 #yarn start
 Open your browser and visit http://localhost:3000.
+deploy: https://star-wars-lake-zeta.vercel.app/
 
 Explore and filter Star Wars characters using the provided options.
 
 Technologies Used
 React.js
+Redux
 Bootstrap
 Star Wars API
 Contributing
